@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/cinta" />
+
+        <ImageView
+            android:id="@+id/imgCorona1"
+            android:layout_width="67dp"
+            android:layout_height="81dp"
+            android:layout_alignBottom="@+id/imgCorona3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="-14dp"
+            android:layout_toStartOf="@+id/imgCorona2"
+            android:src="@drawable/corona" />
+
+        <ImageView
+            android:id="@+id/imgCorona2"
+            android:layout_width="97dp"
+            android:layout_height="92dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imgCorona3"
+            android:src="@drawable/corona" />
+
+        <ImageView
+            android:id="@+id/imgCorona3"
+            android:layout_width="91dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/corona" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnIzquierda"
+            android:layout_width="89dp"
+            android:layout_height="49dp"
+            android:text="IZQ" />
+
+        <Button
+            android:id="@+id/btnCentro"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="CENTRO" />
+
+        <Button
+            android:id="@+id/btnDerecha"
+            android:layout_width="89dp"
+            android:layout_height="46dp"
+            android:text="DER" />
+    </LinearLayout>
+
+</LinearLayout>
